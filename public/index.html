@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css"> 
+    <title>Feex</title>
+</head>
+
+<body class="mx-auto">
+    <nav class="bg-black">
+        <div class="flex flex-row items-center justify-between">
+            <div class="h-12 lg:h-16">
+                <img class="p-2 w-28 lg:px-3 lg:py-2 lg:w-40" src="images/logo.svg" alt="Feex Logo">
+            </div>
+            <div id="burger" class="h-10 w-10 text-primary pr-2 pt-1 cursor-pointer lg:hidden">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg> 
+            </div>
+
+            <div class="hidden lg:flex lg:justify-around xl:text-xl text-primary uppercase text-base pr-16 font-bold">
+                <a class="hover:text-white px-3" href="#">Home</a>
+                <a class="hover:text-white px-3" href="#">How it works?</a>
+                <a class="hover:text-white px-3" href="#">Features</a>
+                <a class="hover:text-white px-3" href="#">Download</a>
+                <a class="hover:text-white px-3" href="#">Contact</a>
+                <a class="hover:text-white px-3" href="#">Newsletter</a>
+            </div>
+        </div>
+
+        <div id="menu" class="hidden pl-4 pb-1 uppercase text-sm sm:text-base">
+            <a class="block hover:text-primary" href="#">Home</a>
+            <a class="block hover:text-primary" href="#">How it works?</a>
+            <a class="block hover:text-primary" href="#">Features</a>
+            <a class="block hover:text-primary" href="#">Download</a>
+            <a class="block hover:text-primary" href="#">Contact</a>
+            <a class="block hover:text-primary" href="#">Newsletter</a>
+        </div>
+
+    </nav>
+
+    <div id="content">
+        <header class="bg-primary text-white ">
+        <div class="bg-center" style="background-image: url(/images/header-bg.jpg);">
+    
+            <div class="px-6 pt-4">
+                <h1 class="text-3xl font-bold">Find the best fix for house upkeep!</h1>
+                <h2 class="pt-2 text-lg leading-tight">Connect with the service providers quickly and easily</h2>
+                
+                <div class="pt-6 flex items-center justify-evenly">
+                    <img class="w-36" src="/images/google-play.png" alt="Google play">
+                    <img class="w-36" src="/images/apple-store.png" alt="App Store">
+                </div>
+    
+            </div>
+            <div class="w-full py-6 items-center">
+                <img src="/images/feex_header.svg" alt="App tech">
+            </div>
+        </div>
+        </header>
+    
+        <section>
+    
+            <img src="" alt="Feex App">
+    
+            <h2>Feex It NOW!</h2>
+            <p>The most unforeseen things happen at the most unexpected times!</p>
+            <p>With Feex you don't have to worry about the odd timing of the home upkeep tasks</p>
+    
+        </section>
+    
+    </div>
+        <footer>
+    
+        </footer>
+
+    <script src="js/feex.js"></script>
+
+
+</body>
+
+</html>

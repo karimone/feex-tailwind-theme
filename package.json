@@ -1,0 +1,20 @@
+{
+  "name": "feex-tw-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/css/tailwind.css -o public/css/tailwind.css",
+    "watch": "postcss src/css/tailwind.css -o public/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
