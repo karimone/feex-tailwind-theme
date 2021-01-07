@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'primary': '#961432',
         'secondary': '#1F7A8C',
+        'tertiary': '#B9D4EF',
       },
       backgroundImage: theme => ({
         'feex-header': "url('/images/header-bg.jpg')"
