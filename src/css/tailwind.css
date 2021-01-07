@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
+
+.site-width {
+    @apply max-w-4xl w-full;
+}
 @tailwind utilities;

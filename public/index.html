@@ -9,8 +9,9 @@
 
 <body>
 
-    <header class="text-white text-center bg-feex-header  bg-no-repeat bg-cover flex flex-col items-center justify-center">
-        <div class="max-w-4xl w-full">
+    <header
+        class="text-white text-center bg-feex-header bg-no-repeat bg-cover flex flex-col items-center justify-center pb-16">
+        <div class="site-width">
 
             <nav class="pt-4">
                 <div class="flex flex-row items-center justify-between">
@@ -25,8 +26,7 @@
                         </svg>
                     </div>
 
-                    <div
-                        class="hidden text-sm md:flex md:justify-around lg:text-lg text-white uppercase">
+                    <div class="hidden text-sm md:flex md:justify-around lg:text-lg text-white uppercase">
                         <a class="hover:text-secondary px-3" href="#">Home</a>
                         <a class="hover:text-secondary px-3" href="#">How it works?</a>
                         <a class="hover:text-secondary px-3" href="#">Features</a>
@@ -53,11 +53,12 @@
                 <div class="pl-6 pt-4 flex flex-col justify-center lg:w-1/2">
                     <!-- Info and store icons -->
                     <h1 class="text-4xl font-bold sm:text-5xl lg:text-5xl lg:text-left">
-                        Find the best fix for house upkeep!</h1>
+                        Find the best fix for <br class="lg:hidden" />house upkeep!</h1>
                     <h2 class="pt-2 text-base leading-tight sm:text-xl lg:text-base lg:pt-6 lg:text-left">
                         Connect with the service providers quickly and easily</h2>
 
-                    <div class="pt-6 flex flex-row items-center justify-evenly sm:justify-center lg:justify-around lg:pt-6">
+                    <div
+                        class="pt-6 flex flex-row items-center justify-evenly sm:justify-center lg:justify-around lg:pt-6">
                         <img class="w-40 sm:w-44 px-3 lg:w-52 lg:px-2" src="/images/google-play.png" alt="Google play">
                         <img class="w-40 sm:w-44 px-3 lg:w-52 lg:px-2" src="/images/apple-store.png" alt="App Store">
                     </div>
@@ -72,19 +73,27 @@
         </div>
     </header>
 
-    <div id="content" class="">
+    <article>
 
-        <section>
 
-            <img src="" alt="Feex App">
+        <div class="site-width mt-2">
+            <div class="lg:flex lg:items-center">
 
-            <h2>Feex It NOW!</h2>
-            <p>The most unforeseen things happen at the most unexpected times!</p>
-            <p>With Feex you don't have to worry about the odd timing of the home upkeep tasks</p>
+                <img class="lg:w-1/2" src="images/feex_phone.png" alt="Feex App">
 
-        </section>
+                <div class="lg:w-1/2 lg:text-left">
+                    <h2 class="text-primary text-3xl pt-4 text-bold">Feex It NOW!</h2>
+                    <p class="pt-2 text-xl text-bold text-gray-800">The most unforeseen things happen at the most unexpected times!</p>
+                    <p class="pt-2 text-base text-gray-600">With Feex you don't have to worry about the odd timing of the home upkeep tasks</p>
+                    <button class="bg-primary text-white shadow-xl mt-3 px-10 py-6 text-center text-bold">Download Now!</button>
+                </div>
+            </div>
 
-    </div>
+        </div>
+
+    </article>
+
+
     <footer>
 
     </footer>
