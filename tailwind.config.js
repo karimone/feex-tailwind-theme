@@ -11,6 +11,9 @@ module.exports = {
       backgroundImage: theme => ({
         'feex-header': "url('/images/header-bg.jpg')"
     }),
+    fontFamily: {
+      'montserrat': ['Montserrat'],
+    }
   },
   variants: {
     extend: {},
