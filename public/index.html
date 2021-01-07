@@ -7,67 +7,72 @@
     <title>Feex</title>
 </head>
 
-<body class="mx-auto">
+<body>
 
-    <header class="bg-primary text-white text-center bg-feex-header">
+    <header class="text-white text-center bg-feex-header  bg-no-repeat bg-cover flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full">
 
-        <nav class="pt-4 lg:mx-6">
-            <div class="flex flex-row items-center justify-between px-4">
-                <div class="h-12 lg:h-16">
-                    <img class="p-2 w-28 lg:px-3 lg:py-2 lg:w-40" src="images/logo_white.svg" alt="Feex Logo">
+            <nav class="pt-4">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="h-12 lg:h-16">
+                        <img class="p-2 w-28 lg:px-3 lg:py-2 lg:w-40" src="images/logo_white.svg" alt="Feex Logo">
+                    </div>
+                    <div id="burger" class="h-10 w-10 text-white pr-2 pt-1 cursor-pointer lg:hidden">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+
+                    <div
+                        class="hidden lg:flex lg:justify-around xl:text-xl text-white uppercase text-base pr-16 font-bold">
+                        <a class="hover:text-primary px-3" href="#">Home</a>
+                        <a class="hover:text-primary px-3" href="#">How it works?</a>
+                        <a class="hover:text-primary px-3" href="#">Features</a>
+                        <a class="hover:text-primary px-3" href="#">Download</a>
+                        <a class="hover:text-primary px-3" href="#">Contact</a>
+                        <a class="hover:text-primary px-3" href="#">Newsletter</a>
+                    </div>
                 </div>
-                <div id="burger" class="h-10 w-10 text-white pr-2 pt-1 cursor-pointer lg:hidden">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+
+                <!-- The menu shown when the burger is pressed -->
+                <div id="menu" class="hidden text-white pl-8 pb-1 uppercase text-sm sm:text-base">
+                    <a class="block hover:text-black" href="#">Home</a>
+                    <a class="block hover:text-black" href="#">How it works?</a>
+                    <a class="block hover:text-black" href="#">Features</a>
+                    <a class="block hover:text-black" href="#">Download</a>
+                    <a class="block hover:text-black" href="#">Contact</a>
+                    <a class="block hover:text-black" href="#">Newsletter</a>
                 </div>
 
-                <div class="hidden lg:flex lg:justify-around xl:text-xl text-white uppercase text-base pr-16 font-bold">
-                    <a class="hover:text-primary px-3" href="#">Home</a>
-                    <a class="hover:text-primary px-3" href="#">How it works?</a>
-                    <a class="hover:text-primary px-3" href="#">Features</a>
-                    <a class="hover:text-primary px-3" href="#">Download</a>
-                    <a class="hover:text-primary px-3" href="#">Contact</a>
-                    <a class="hover:text-primary px-3" href="#">Newsletter</a>
+            </nav>
+
+
+            <div class="flex flex-col justify-center lg:flex-row lg:justify-between">
+                <div class="pl-6 pt-4 flex flex-col justify-center lg:w-1/2">
+                    <!-- Info and store icons -->
+                    <h1 class="text-4xl font-bold sm:text-5xl lg:text-5xl">
+                        Find the best fix for house upkeep!</h1>
+                    <h2 class="pt-2 text-base leading-tight sm:text-xl lg:text-2xl lg:pt-6">
+                        Connect with the service providers quickly and easily</h2>
+
+                    <div class="pt-6 flex flex-row items-center justify-evenly sm:justify-center lg:justify-around lg:pt-6">
+                        <img class="w-40 sm:w-44 px-3 lg:w-56 lg:px-2" src="/images/google-play.png" alt="Google play">
+                        <img class="w-40 sm:w-44 px-3 lg:w-56 lg:px-2" src="/images/apple-store.png" alt="App Store">
+                    </div>
+
+                </div>
+
+                <div class="block lg:w-1/2">
+                    <img class="my-3 inline" src="/images/feex_header.svg" alt="App tech">
                 </div>
             </div>
 
-            <div id="menu" class="hidden text-white pl-8 pb-1 uppercase text-sm sm:text-base">
-                <a class="block hover:text-black" href="#">Home</a>
-                <a class="block hover:text-black" href="#">How it works?</a>
-                <a class="block hover:text-black" href="#">Features</a>
-                <a class="block hover:text-black" href="#">Download</a>
-                <a class="block hover:text-black" href="#">Contact</a>
-                <a class="block hover:text-black" href="#">Newsletter</a>
-            </div>
-
-        </nav>
-
-        <div class="bg-center pb-3 md:flex md:grid-cols-2 md:items-center lg:pb-2">
-
-            <div class="pl-6 pt-4 md:col-span-1 md:pl-16 pr-12">
-                <!-- Info and store icons -->
-                <h1 class="text-4xl font-bold sm:text-5xl lg:text-5xl lg:text-left">
-                    Find the best fix for house upkeep!</h1>
-                <h2 class="pt-2 text-base leading-tight sm:text-xl lg:text-2xl lg:text-left lg:pt-6">
-                    Connect with the service providers quickly and easily</h2>
-
-                <div class="pt-6 flex items-center justify-evenly sm:justify-center lg:justify-around lg:pt-6">
-                    <img class="w-40 sm:w-44 px-3 lg:w-56 lg:px-2" src="/images/google-play.png" alt="Google play">
-                    <img class="w-40 sm:w-44 px-3 lg:w-56 lg:px-2" src="/images/apple-store.png" alt="App Store">
-                </div>
-
-            </div>
-            <div class="py-6 md:col-span-1 md:pr-6">
-                <img class="mx-auto w-max" src="/images/feex_header.svg" alt="App tech">
-            </div>
         </div>
-
     </header>
 
-    <div id="content">
+    <!-- <div id="content" class="">
 
         <section>
 
@@ -79,7 +84,7 @@
 
         </section>
 
-    </div>
+    </div> -->
     <footer>
 
     </footer>
